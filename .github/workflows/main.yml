@@ -26,13 +26,13 @@ jobs:
         password: ${{ secrets.SERVER_PWD }} # 服务器密码；需要去仓库的 settings/secrets/actions 去创建
         port: ${{ secrets.SERVER_PORT }} # 服务器端口，默认22；需要去仓库的 settings/secrets/actions 去创建
         script: | # 重启更新镜像
-          if docker ps -a | grep -q 'web-image'; then
-            docker stop web-image 
-            docker rm web-image 
+          if docker ps -a | grep -q 'myprofile'; then
+            docker stop myprofile
+            docker rm myprofile 
           fi
           docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD }} 
           docker pull liuyaowen0925/myprofile:latest 
-          docker run -dp 8088:80  --restart=always --name web-image liuyaowen0925/myprofile:latest
+          docker run -dp 8088:80  --restart=always --name myprofile liuyaowen0925/myprofile:latest
 
 
 
