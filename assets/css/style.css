@@ -237,6 +237,8 @@ article.active {
 .h5 {
   font-size: var(--fs-7);
   font-weight: var(--fw-500);
+  /* 超出宽度自动换行 */
+  max-width: 100%;
 }
 
 .article-title {
