@@ -136,6 +136,13 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+// add event to form button
+formBtn.addEventListener("click", function () {
+  // 将内容发送到邮箱
+
+  form.reset();
+  formBtn.setAttribute("disabled", "");
+});
 
 
 // page navigation variables
