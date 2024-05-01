@@ -1,0 +1,36 @@
+
+<header>
+    <h2 class="h2 article-title">与我联系</h2>
+  </header>
+
+  <section class="mapbox" data-mapbox>
+    <figure>
+      <!-- 高德地图API -->
+      <iframe
+        src="https://restapi.amap.com/v3/staticmap?location=113.94,22.53&zoom=12&size=850*400&markers=mid,,A:113.94,22.53&key=5fe5b656c18ece42eb88246c4123ba39"
+        width="400" height="300" loading="lazy"></iframe>
+    </figure>
+  </section>
+
+  <section class="contact-form">
+
+    <h3 class="h3 form-title">Contact Form</h3>
+
+    <form action="#" class="form" data-form>
+
+      <div class="input-wrapper">
+        <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+        <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+      </div>
+
+      <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+      <button class="form-btn" type="submit" disabled data-form-btn>
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>Send Message</span>
+      </button>
+
+    </form>
+
+  </section>
