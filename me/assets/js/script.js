@@ -1,12 +1,10 @@
 'use strict';
 
-
-
 // 找到博客标签
 const blogTags = document.querySelector(".blog");
 // 加载HTML页面，挂载上去
 const XML = new XMLHttpRequest();
-XML.open("GET", "/blog.html", true);
+XML.open("GET", "/me/blog.html", true);
 XML.send();
 XML.onreadystatechange = function () {
   blogTags.innerHTML = XML.responseText;
@@ -16,7 +14,7 @@ XML.onreadystatechange = function () {
 const portfolioTags = document.querySelector(".portfolio");
 // 加载HTML页面，挂载上去
 const XML2 = new XMLHttpRequest();
-XML2.open("GET", "/portfolio.html", true);
+XML2.open("GET", "/me/portfolio.html", true);
 XML2.send();
 XML2.onreadystatechange = function () {
   portfolioTags.innerHTML = XML2.responseText;
@@ -26,7 +24,7 @@ XML2.onreadystatechange = function () {
 const contactTags = document.querySelector(".contact");
 // 加载HTML页面，挂载上去
 const XML3 = new XMLHttpRequest();
-XML3.open("GET", "/contact.html", true);
+XML3.open("GET", "/me/contact.html", true);
 XML3.send();
 XML3.onreadystatechange = function () {
   contactTags.innerHTML = XML3.responseText;
@@ -36,7 +34,7 @@ XML3.onreadystatechange = function () {
 const resumeTags = document.querySelector(".resume");
 // 加载HTML页面，挂载上去
 const XML4 = new XMLHttpRequest();
-XML4.open("GET", "/resume.html", true);
+XML4.open("GET", "/me/resume.html", true);
 XML4.send();
 XML4.onreadystatechange = function () {
   resumeTags.innerHTML = XML4.responseText;
@@ -46,7 +44,7 @@ XML4.onreadystatechange = function () {
 const aboutTags = document.querySelector(".about");
 // 加载HTML页面，挂载上去
 const XML5 = new XMLHttpRequest();
-XML5.open("GET", "/about.html", true);
+XML5.open("GET", "/me/about.html", true);
 XML5.send();
 XML5.onreadystatechange = function () {
   aboutTags.innerHTML = XML5.responseText;
